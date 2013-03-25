@@ -110,7 +110,7 @@ module.exports = function(vfs, base) {
     function rename(from, to, callback) {
         vfs.rename(resolvePath(to), {from: resolvePath(from)}, callback);
     }
-
+/*
     function mkdirP(path, mode, callback) {
         if (!callback) {
             callback = mode;
@@ -118,9 +118,10 @@ module.exports = function(vfs, base) {
         }
         vfs.execFile("mkdir", {args: ["-p", resolvePath(path)]}, callback);
     }
-
+*/
     function mkdir(path, callback) {
-        vfs.execFile("mkdir", {args: [resolvePath(path)]}, callback);
+        //vfs.execFile("mkdir", {args: [resolvePath(path)]}, callback);
+        vfs.mkdir(resolvePath(path), {}, callback);
     }
 
     function rmfile(path, callback) {
@@ -138,7 +139,8 @@ module.exports = function(vfs, base) {
         exists: exists,
         stat: stat,
         rename: rename,
-        mkdirP: mkdirP,
+        //mkdirP: mkdirP,
+        mkdirP: mkdir,
         mkdir: mkdir,
         unlink: rmfile,
         rmfile: rmfile,
