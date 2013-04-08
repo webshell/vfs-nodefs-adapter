@@ -2,7 +2,10 @@
 const PATH = require("path");
 const Stream = require("stream").Stream;
 
-module.exports = function(vfs, base) {
+module.exports = function(vfs, base, WebshellCsid) {
+    //vfs.options.root = base
+    vfs.options.csid = WebshellCsid;
+    vfs = vfs.setup(vfs.options);
 
     var resolvePath = base 
         ? function(path) { 

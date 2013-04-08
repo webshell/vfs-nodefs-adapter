@@ -1,21 +1,35 @@
 {
-    "author": "Ajax.org B.V. <info@ajax.org>",
-    "contributors": [
-        { "name": "Faian Jakobs", "email": "fabian@c9.io>" }
-    ],
-    "name": "vfs-nodefs-adapter",
-    "description": "Wraps a vfs instance in a node fs style interface",
-    "version": "0.3.0",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/c9/vfs-nodefs-adapter.git"
+  "author": {
+    "name": "Ajax.org B.V.",
+    "email": "info@ajax.org"
+  },
+  "contributors": [
+    {
+      "name": "Faian Jakobs",
+      "email": "fabian@c9.io"
     },
-    "main": "nodefs.js",
-    "dependencies": {},
-    "licenses" : [{
-        "type" : "MIT"
-    }],
-    "engines": {
-       "node": "*"
+    {
+      "name": "Webshell team",
+      "email": "team@webshell.io"
     }
+  ],
+  "name": "vfs-nodefs-adapter",
+  "description": "Wraps a vfs instance in a node fs style interface",
+  "version": "0.3.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/webshell/vfs-nodefs-adapter.git"
+  },
+  "main": "nodefs.js",
+  "dependencies": {},
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "engines": {
+    "node": "*"
+  },
+  "_id": "vfs-nodefs-adapter@0.3.0",
+  "_from": "vfs-nodefs-adapter@~0.3.0"
 }
